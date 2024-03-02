@@ -33,7 +33,7 @@ jobs:
           git commit --allow-empty -m ":robot: build automatically"
           git push
       - name: repository dispatch
-        uses: peter-evans/repository-dispatch@v3
+        uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.GH_TOKEN }}
           event-type: build-event
